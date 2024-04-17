@@ -1,8 +1,0 @@
-# ninja log v5
-1	202	1713372589103046293	CMakeFiles/lab_14.dir/libs/data_structures/exceptions/exceptions.c.o	662c369c3177a8c7
-1	203	1713372589103045626	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.o	f9b3f5cfa38f5caf
-2	203	1713372589103121415	libs/data_structures/CMakeFiles/data_structures.dir/exceptions/exceptions.c.o	9bae828d3703d14e
-0	203	1713372589103030752	CMakeFiles/lab_14.dir/main.c.o	37a2541c08fab336
-1	204	1713372589103038335	CMakeFiles/lab_14.dir/libs/data_structures/vector/vector.c.o	8c57502ec87c3a1d
-203	282	1713372589187450000	libs/data_structures/libdata_structures.a	b0cdd52216c98
-282	453	1713372589353937534	lab_14	2bda4aaddbe3c858
