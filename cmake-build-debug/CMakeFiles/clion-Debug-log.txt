@@ -1,0 +1,10 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/denzl/CLionProjects/2sem/19.14/lab_14 -B /Users/denzl/CLionProjects/2sem/19.14/lab_14/cmake-build-debug
+CMake Error at libs/CMakeLists.txt:1 (add_subdirectory):
+  The source directory
+
+    /Users/denzl/CLionProjects/2sem/19.14/lab_14/libs/data_structures
+
+  does not contain a CMakeLists.txt file.
+
+
+-- Configuring incomplete, errors occurred!
