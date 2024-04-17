@@ -8,7 +8,9 @@ vector createVector(size_t n){
         new.data = NULL;
     } else {
         new.data = (int *) malloc(n * sizeof(int));
-        exceptBadAlloc(new);
+        if (!new.data){
+            exceptBadAlloc();
+        }
     }
 
     new.size = 0;
@@ -23,12 +25,15 @@ void reserve(vector *v, size_t newCapacity){
         v->data = NULL;
     } else {
         v->data = (int *)realloc(v->data, sizeof(int) * newCapacity);
-        exceptBadAlloc(*v);
+        if (!v->data){
+            exceptBadAlloc();
+        }
     }
 
     v->size = v->size > newCapacity ? newCapacity : v->size;
     v->capacity = newCapacity;
 }
+
 
 void clear(vector *v){
     v->size = 0;
@@ -61,10 +66,24 @@ bool isFull(vector *v){
 }
 
 
+bool isExistingIndex(vector v, size_t index){
+    return index < v.size;
+}
+
+
+int getVectorValue(vector *v, size_t i){
+    if (!isExistingIndex(*v, i)){
+        exceptIndexError();
+    }
+
+    return v->data[i];
+}
+
+
 void pushBack(vector *v, int x){
     if (!v->capacity){
         reserve(v, 1);
-    } else if (v->size == v->capacity){
+    } else if (isFull(v)){
         reserve(v, v->capacity * 2);
     }
 
@@ -73,6 +92,28 @@ void pushBack(vector *v, int x){
 
 
 void popBack(vector *v) {
-    exceptIndexError(*v);
+    if (isEmpty(v)){
+        exceptEmptyVector();
+    }
+
     v->size--;
+}
+
+
+int* atVector(vector *v, size_t index){
+    if (!isExistingIndex(*v, index)){
+        exceptIndexError();
+    }
+
+    return v->data + index;
+}
+
+
+int* back(vector *v){
+    return &v->data[v->size > 0 ? v->size - 1 : 0];
+}
+
+
+int* front(vector *v) {
+    return &v->data[0];
 }

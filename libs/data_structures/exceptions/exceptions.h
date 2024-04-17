@@ -5,10 +5,13 @@
 #include "/Users/denzl/CLionProjects/2sem/19.14/lab_14/libs/data_structures/vector/vector.h"
 
 // ошибка нехватки памяти
-void exceptBadAlloc(vector v);
+void exceptBadAlloc();
+
+// ошибка - вектор пустой
+void exceptEmptyVector();
 
 // ошибка ненайденного элемента
-void exceptIndexError(vector v);
+void exceptIndexError();
 
 
 #endif //LAB_14_EXCEPTIONS_H
