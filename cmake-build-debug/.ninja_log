@@ -15,3 +15,12 @@
 210	236	1713474092875409377	libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.o	cae049cf7ecc24ad
 236	318	1713474092958626000	libs/data_structures/libdata_structures.a	495cbfe69357ea9
 318	2087	1713474094725804566	lab_14	f4daba94f44bcfa9
+1	195	1713474591072822423	CMakeFiles/lab_14.dir/main.c.o	37a2541c08fab336
+2	196	1713474591071989201	libs/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.o	f9b3f5cfa38f5caf
+1	196	1713474591071985868	CMakeFiles/lab_14.dir/libs/data_structures/vector/vector.c.o	8c57502ec87c3a1d
+2	196	1713474591071994451	CMakeFiles/lab_14.dir/libs/data_structures/exceptions/exceptions.c.o	662c369c3177a8c7
+2	196	1713474591071981659	CMakeFiles/lab_14.dir/libs/data_structures/vector/vectorVoid.c.o	86b6bc61f7cf6527
+2	196	1713474591072077739	libs/data_structures/CMakeFiles/data_structures.dir/exceptions/exceptions.c.o	9bae828d3703d14e
+195	222	1713474591101081801	libs/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.o	cae049cf7ecc24ad
+222	240	1713474591121417000	libs/data_structures/libdata_structures.a	495cbfe69357ea9
+240	406	1713474591282749207	lab_14	f4daba94f44bcfa9

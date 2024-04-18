@@ -49,5 +49,8 @@ void popBackV(vectorVoid *v);
 // добавляет в конец вектора значение, расположенное по адресу source
 void pushBackV(vectorVoid *v, void *source);
 
+// возвращает 'истина' если в векторе существует элемент по заданному идексу, иначе - 'ложь'
+bool isExistingIndexV(vectorVoid v, size_t index);
+
 
 #endif //LAB_14_VECTORVOID_H
