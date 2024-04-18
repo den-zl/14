@@ -3,6 +3,7 @@
 
 
 #include "/Users/denzl/CLionProjects/2sem/19.14/lab_14/libs/data_structures/vector/vector.h"
+#include "/Users/denzl/CLionProjects/2sem/19.14/lab_14/libs/data_structures/vector/vectorVoid.h"
 
 // ошибка нехватки памяти
 void exceptBadAlloc();
@@ -12,6 +13,9 @@ void exceptEmptyVector();
 
 // ошибка ненайденного элемента
 void exceptIndexError();
+
+// ошибка нехватки памяти
+void exceptBadAllocV(vectorVoid v);
 
 
 #endif //LAB_14_EXCEPTIONS_H
