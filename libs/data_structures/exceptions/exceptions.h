@@ -17,5 +17,11 @@ void exceptIndexError();
 // ошибка нехватки памяти
 void exceptBadAllocV(vectorVoid v);
 
+// ошибка ненайденного элемента
+void exceptIndexErrorV(vectorVoid v, const size_t index);
+
+// ошибка - вектор пустой
+void exceptEmptyVectorV(vectorVoid v);
+
 
 #endif //LAB_14_EXCEPTIONS_H
